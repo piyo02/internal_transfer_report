@@ -19,7 +19,7 @@ class PurchaseReport(models.TransientModel):
                 '&', ('min_date', '<=', self.end_date),
                 '&', ('min_date', '>=', self.start_date),
                 '&', ('state', '=', 'done'),
-                ('picking_type_id', 'ilike', 'Toko Karya Jaya Santosa: Internal Transfers'),
+                ('picking_type_id', 'ilike', 'Internal Transfers'),
             ], 
             order="min_date asc")
 
